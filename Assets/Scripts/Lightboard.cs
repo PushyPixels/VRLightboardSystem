@@ -11,8 +11,8 @@ public class Lightboard : MonoBehaviour
         newPosition.z = transform.position.z;
 
         colliderRigidbody.velocity = Vector3.zero;
-        colliderRigidbody.position = newPosition;
-        colliderRigidbody.rotation = Quaternion.LookRotation(transform.forward, colliderRigidbody.transform.up);
+        colliderRigidbody.transform.position = newPosition;
+        colliderRigidbody.transform.rotation = Quaternion.LookRotation(transform.forward, colliderRigidbody.transform.up);
         colliderRigidbody.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationX;
     }
 }
