@@ -60,3 +60,4 @@ crashlytics-build.properties
 
 # Test files that shouldn't be in repo
 /Assets/!DONOTDISTRUBUTE/
+/Assets/!DONOTDISTRUBUTE.meta
