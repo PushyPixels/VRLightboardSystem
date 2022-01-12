@@ -18,6 +18,7 @@ public class GripScale : MonoBehaviour
             {
                 float newGripDistance = (worldGrabMovement.leftHand.rigidbody.position - worldGrabMovement.rightHand.rigidbody.position).magnitude;
                 objectToScale.localScale *= newGripDistance/gripDistance;
+                gripDistance = newGripDistance;
             }
             else if(worldGrabMovement.leftHand.grippedObject && !worldGrabMovement.rightHand.grippedObject)
             {
