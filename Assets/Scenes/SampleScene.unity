@@ -1976,6 +1976,7 @@ GameObject:
   - component: {fileID: 1725982594}
   - component: {fileID: 1725982593}
   - component: {fileID: 1725982595}
+  - component: {fileID: 1725982596}
   m_Layer: 0
   m_Name: XRRig
   m_TagString: Untagged
@@ -2060,6 +2061,19 @@ MonoBehaviour:
   minimumMovementDistance: 0.01
   sqrMinimumMovementDistance: 0.0001
   rigidbody: {fileID: 0}
+--- !u!114 &1725982596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725982592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3853d01438f06bf48bd248aec07f50f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  worldGrabMovement: {fileID: 1725982595}
 --- !u!1 &1728657555
 GameObject:
   m_ObjectHideFlags: 0
