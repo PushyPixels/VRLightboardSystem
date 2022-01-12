@@ -109,6 +109,7 @@ public class WorldGrabMovement : MonoBehaviour
                 rb.isKinematic = hand.grippedObjectIsKinematic;
             }
 
+            hand.grippedObject = null;
             hand.state = HandState.Empty;
             hand.rigidbody.GetComponentInChildren<MeshRenderer>().enabled = true;
         }
